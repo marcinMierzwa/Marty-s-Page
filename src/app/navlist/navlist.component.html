@@ -1,0 +1,6 @@
+<ul class="h-full flex justify-evenly md:justify-between items-center px-1">
+    @if (skillsList) {
+    @for (skill of skillsList; track $index){    
+    <a class="link" href="/">{{ skill.name }}</a>
+    }}
+</ul>
