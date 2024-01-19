@@ -2,7 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-.link{
+@layer utilities {
+  .link {
     font-size: clamp(13px, 2.8vw, 1rem);
     cursor: pointer;
+  }
+  .translate-center {
+    transform: translate(-50%, -50%);
+  }
+
+  .translate-verthical {
+    transform: translateY(-50%);
+  }
 }

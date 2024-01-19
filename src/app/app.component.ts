@@ -6,14 +6,19 @@ import { HeaderComponent } from "./header/header.component";
 import { NavigationSideComponent } from "../navigation-side/navigation-side.component";
 import { ContentComponent } from "../content/content.component";
 import { FooterComponent } from "./footer/footer.component";
+import { LoginModalComponent } from "./shared-Components/login-modal/login-modal.component";
+import { initFlowbite } from 'flowbite';
+import { OnInit } from '@angular/core';
 
 @Component({
     selector: 'app-root',
     standalone: true,
     templateUrl: './app.component.html',
     styleUrl: './app.component.css',
-    imports: [CommonModule, RouterOutlet, NavigationTopComponent, HeaderComponent, NavigationSideComponent, ContentComponent, FooterComponent]
+    imports: [CommonModule, RouterOutlet, NavigationTopComponent, HeaderComponent, NavigationSideComponent, ContentComponent, FooterComponent, LoginModalComponent]
 })
 export class AppComponent {
-  title = 'next-route';
+  ngOnInit(): void {
+    initFlowbite();
+  }
 }
