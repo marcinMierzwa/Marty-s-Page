@@ -1,0 +1,54 @@
+{
+  "skills": [
+    {
+      "id": 1,
+      "name": "Angular",
+      "topics": [
+        {
+          "id": 1,
+          "name": "input"
+        },
+        {
+          "id": 2,
+          "name": "signals"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "JavaScript",
+      "topics": [
+        {
+          "id": 1,
+          "name": "destructuring"
+        },
+        {
+          "id": 2,
+          "name": "array's methods"
+        }
+      ]
+    }
+  ],
+  "NavbarList": [
+    {
+      "id": 1,
+      "name": "about me"
+    },
+    {
+      "id": 2,
+      "name": "skills"
+    },
+    {
+      "id": 3,
+      "name": "carrer planning"
+    },
+    {
+      "id": 4,
+      "name": "other passions"
+    },
+    {
+      "id": 5,
+      "name": "contact"
+    }
+  ]
+}

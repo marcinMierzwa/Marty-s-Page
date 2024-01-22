@@ -1,16 +1,13 @@
-<main class="h-screen w-screen mx-auto flex flex-col p-1 overflow-hidden">
+<main class="h-screen w-screen mx-auto flex flex-col overflow-hidden">
     
     <div class="bg-slate-500 ">
         <app-navigation-top/>
     </div>
-    <section class="bg-blue-300 ">
-        <!-- <div class="basis-10/12"><app-content/></div>
-        <div class="basis-2/12 md:order-first"><app-navigation-side/></div> -->
+    <section class="w-full bg-blue-300 flex flex-col md:flex-row main basis-11/12 ">
+        <div class="basis-11/12 md:basis-4/5 xl:basis-10/12 w-full md:order-last"><router-outlet/></div>
+        <div class="basis-1/12 md:basis-1/5 xl:basis-2/12"><app-navigation-side/></div>
     </section>
     <div class="bg-red-500 ">
         <app-footer/>
     </div>
-    
 </main>
-
-<!-- flex flex-col md:flex-row main -->
